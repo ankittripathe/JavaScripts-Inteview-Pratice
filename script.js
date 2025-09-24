@@ -90,15 +90,79 @@ console.log(answer);
 // (6) Write a javaScript function that reverse a number
 function reverseKaro(num){
     let str = num.toString()
+
     let arrayStr = str.split('')
+
     let reverseStr = arrayStr.reverse()
+
     let  finalReverse = reverseStr.join("")
+
     console.log(typeof finalReverse);
-    
+
     let finalReverseInNumber = Number(finalReverse)
     console.log(finalReverseInNumber);
     console.log(typeof finalReverseInNumber);
 }
 reverseKaro(12)
 // reverseKaro("72")
+
+
+// method-2
+let reverseNumber = (num)=>{
+    let rev = 0
+    while(num>0){
+        var rem = num%10   // 4   // 3   // 2  // 1
+        rev = rev*10+rem   // 4   // 43  // 4321
+        num = Math.floor(num/10)  // 123  // 12  // 1  // 0
+    }
+    return rev
+}
+console.log(reverseNumber(1234));
+
+
+
+// (7) Write a javaScript function that checks wheather a passed string is palidrome or not
+/* 
+Notes:-
+palindromic number/string is a number/string that remains the same when its digits are reversed.
+For example:- lool, 16361
+*/
+const palidromeChecker = (str)=>{
+    let reversedStr = str.split('').reverse().join('')
+    // console.log(reversedStr);
+    // return reversedStr === str ? true : false
+    return reversedStr === str
+}
+console.log(palidromeChecker('lool'));   // true
+console.log(palidromeChecker('cool'));   // false
+console.log(palidromeChecker('16361'));  // true
+
+
+// (8) Write a JavaScripts function that returns a passed string with letters in alphabetical order.
+// For Example:- apple => aelpp
+const stringAlphabeticalOrder = (str)=>{
+    let ascendingOrder = str.split('').sort().join('')
+    console.log(ascendingOrder);
+} 
+stringAlphabeticalOrder('apple')
+stringAlphabeticalOrder('mango')
+
+
+/* 
+ (9) Write a JavaScripts function that accepts a string as a parameter and converts the first letter of each word of the string in UpperCase.
+Example:- ankit bhai kaise ho => Ankit Bhai Kaise Ho
+*/
+
+function capitalizeKaro(str){
+   let allWords = str.split(" ").map((word)=>{
+    return word.charAt(0).toUpperCase() + word.substring(1)
+   })
+   return allWords.join(" ")
+}
+console.log(capitalizeKaro('ankit bhai kaise ho'));
+
+
+/*
+(10) 
+*/
 
