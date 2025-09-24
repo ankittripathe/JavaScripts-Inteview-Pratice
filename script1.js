@@ -179,3 +179,4 @@ function occurrences(str){
    return occuanceObj
 }
 console.log(occurrences('apple'));
+console.log(occurrences('shivajitheboss'));
