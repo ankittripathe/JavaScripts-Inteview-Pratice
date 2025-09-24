@@ -163,6 +163,19 @@ console.log(capitalizeKaro('ankit bhai kaise ho'));
 
 
 /*
-(10) 
+(10) Write a JavaScripts function to get the number of occurrences of each letter in specified string
+Example: apple => a=1, p=2, l=1, e=1
 */
-
+function occurrences(str){
+    let occuanceObj = {}
+    let  result = str.split("").forEach((elem)=>{
+        if(occuanceObj.hasOwnProperty(elem) === false){
+            occuanceObj[elem] = 1
+        }
+        else{
+            occuanceObj[elem]++
+        }
+    })
+   return occuanceObj
+}
+console.log(occurrences('apple'));
