@@ -1,4 +1,4 @@
-// (14) Write a JavaScript function to clone an array
+// (15) Write a JavaScript function to clone an array
 function clone(arr){
     console.log([...arr]);
 }
@@ -23,4 +23,4 @@ function cloneArray(arr){
 }
 cloneArray([1, 2, 3, 'ankit'])
 
-// (15) 
+// (16) 

@@ -1,5 +1,5 @@
 
-// (11) Loops an array and add all members of it.
+// (12) Loops an array and add all members of it.
 let array = [1, 2, 3, 4, 5]
 let sum = 0;
 
@@ -15,7 +15,7 @@ console.log(sum);
 // console.log(sum);
 
 
-// (12) In an array of numbers and strings, only add those members which are not strings.
+// (13) In an array of numbers and strings, only add those members which are not strings.
 let arr = ['leechi', 7, 'apple', 'mango', 'orange', 3, 10]
 let mySum = 0;
 
@@ -27,7 +27,7 @@ arr.forEach((elem)=>{
 console.log('mySum =', mySum);
 
 
-// (13) loop an array of objects and remove all objects which don't have gender's value male.
+// (14) loop an array of objects and remove all objects which don't have gender's value male.
 let array1 = [
     {name:'Ankit', gender: 'male'}, 
     {name:'Ankita', gender: 'female'}, 
@@ -44,8 +44,4 @@ console.log(newArray);
 array1 = newArray
 console.log(array1);
 console.log(newArray);
-
-
-
-
 
